@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b3283bc2-99fc-44c1-b723-62148396ee3a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rf4HImELDulqtWc5KnoBcyK8r0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b3283bc2-99fc-44c1-b723-62148396ee3a" name="Default Changelist" comment="" />
+      <created>1619353720760</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619353720760</updated>
+      <workItem from="1619353726055" duration="525000" />
+      <workItem from="1619960801709" duration="23815000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="490" y="523" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1620994009463">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="490" y="523" key="#com.intellij.fileTypes.FileTypeChooser/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1620994009463" />
+    <state x="532" y="426" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1621083638155">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="532" y="426" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1621083638155" />
+    <state x="927" y="525" key="com.intellij.ide.util.TipDialog" timestamp="1619960940773">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="927" y="525" key="com.intellij.ide.util.TipDialog/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1619960940773" />
+    <state x="376" y="235" width="1539" height="687" key="new project wizard" timestamp="1620142273693">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="376" y="235" width="1539" height="687" key="new project wizard/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1620142273693" />
+    <state x="438" y="339" width="838" height="1032" key="search.everywhere.popup" timestamp="1621014356319">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="438" y="339" width="838" height="1032" key="search.everywhere.popup/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1621014356319" />
+  </component>
+</project>
