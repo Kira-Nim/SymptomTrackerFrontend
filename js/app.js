@@ -16,16 +16,35 @@ document.addEventListener("DOMContentLoaded",function(){
     // FormData is an Object used primarily to structure the form body from an element so that it can be used in a post-request.
       var formData = new FormData(formElement);
 
-      fetch(){
+      var postOptions = {
+        method: 'post',
+        body: formData
+      };
 
-    }
+      fetch(formElement.action, postOptions)
+        .then();
 
-
+      // Dette returneres til metoden browseren kører når bugeren klikker. False signalerer at der ikke skal ske noget.
+      // Vi har valgt at returne false fordi vi har valgt ikke at tage et Event som parameter til metoden. Havde vi taget Event, så kunne vi have kørt preventDefault() på evenyentet i stedet.
+      return false;
 
   }
 
 
-
-
-
 });
+
+
+
+
+
+myJSObject = {
+
+ var1: "Bla",
+ var2: 2,
+ var3: [1, 2, 3, 4],
+ var4: (myinput) => { console.log(myinput); },
+ var5: {
+  innerObjectVar1: "bla",
+  innerObjectVar1: 3,
+ }
+}
