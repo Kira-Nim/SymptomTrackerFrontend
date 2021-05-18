@@ -43,6 +43,18 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -55,7 +67,7 @@
       <updated>1619353720760</updated>
       <workItem from="1619353726055" duration="525000" />
       <workItem from="1619960801709" duration="28381000" />
-      <workItem from="1621155559756" duration="11219000" />
+      <workItem from="1621155559756" duration="15834000" />
     </task>
     <servers />
   </component>
