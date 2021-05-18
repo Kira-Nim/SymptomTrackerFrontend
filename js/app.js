@@ -18,11 +18,34 @@ document.addEventListener("DOMContentLoaded",function(){
 
       var postOptions = {
         method: 'post',
-        body: formData
+        body: formData,
+        credentials: 'include' //We shall include cookies in any requests and if there are a cookie in a responses, it should be set in the browser.
       };
 
       fetch(formElement.action, postOptions)
-        .then(response =>{console.log(response)});
+        .then(response => {
+
+          var status = response.status
+
+          if(status === 204){
+
+
+
+          }
+
+          else if(status == 401){
+
+
+          }
+
+          else{
+
+          }
+
+
+
+
+        });
 
       // Dette returneres til metoden browseren kører når bugeren klikker. False signalerer at der ikke skal ske noget.
       // Vi har valgt at returne false fordi vi har valgt ikke at tage et Event som parameter til metoden. Havde vi taget Event, så kunne vi have kørt preventDefault() på evenyentet i stedet.
