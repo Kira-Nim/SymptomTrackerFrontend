@@ -59,18 +59,23 @@
 
               <form action= "http://localhost:8080/login" method="post" id="loginForm">
 
-<!--Implemented through SpringSecurity
-    <div th:if="${param.error}" class="alert alert-error">
-    Forkert brugernavn eller password.
-  </div>
 
-  Implemented through SpringSecurity
-  <div th:if="${param.logout}" class="alert alert-success">
+              <div class="alert alert-danger hidden" id="logInFailedAlert">
+                Forkert email eller password
+              </div>
+
+                <div class="alert alert-danger hidden" id="noAccessAlert">
+                  Log ind fejlede.
+                </div>
+
+
+
+<!--  <div th:if="${param.logout}" class="alert alert-success">
     Du er blevet logget ud. Log venligst ind igen.
   </div>-->
 
                 <div class="form-group">
-                  <input type="text" name="email" placeholder="Brugernavn" class="form-control formFont formControlCustom">
+                  <input type="text" name="email" placeholder="Email" class="form-control formFont formControlCustom">
                 </div>
 
                 <div class="form-group">
@@ -84,7 +89,7 @@
 
               <div class="bottom text-center mb-2">
                 <p class="sm-text mx-auto mb-3">Opret Konto?
-                  <a href="./"><button class="btn btn-white ml-2">Opret</button></a>
+                  <a href="http://localhost:63342/SymptomTrackerFrontend/CreateAccount.html"><button class="btn btn-white ml-2">Opret</button></a>
                 </p>
               </div>
 

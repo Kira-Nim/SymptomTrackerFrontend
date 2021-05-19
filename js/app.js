@@ -2,15 +2,16 @@
 // The following code is not to be executed before the document has loaded the full html dom.
 document.addEventListener("DOMContentLoaded",function(){
 
-// Intercept form post and instead make the post with JS fetch.
+
+// Intercept form post from login-form, and instead make the post with JS fetch.
 // This is because we want to handle the redirect with JS.
 // To be able to make this work we must set the session cookie using JS.
   var formElement = document.getElementById("loginForm");
 
-  formElement.onsubmit = submitForm;
+  if(formElement) formElement.onsubmit = submitFormLogin;
 
   // We have access to the formElement because of enclosure. Could use Event as parameter instead, but Event.target is finicky and not preferred.
-  function submitForm(){
+  function submitFormLogin(){
 
     // FormData can work together with Fetch. It can be given as body to the post-request we will be making.
     // FormData is an Object used primarily to structure the form body from an element so that it can be used in a post-request.
@@ -29,21 +30,20 @@ document.addEventListener("DOMContentLoaded",function(){
 
           if(status === 204){
 
-
+            document.location.href = 'mainPage.html';
 
           }
 
           else if(status == 401){
-
+            document.getElementById('noAccessAlert').classList.add('hidden');
+            document.getElementById('logInFailedAlert').classList.remove('hidden');
 
           }
 
           else{
-
+            document.getElementById('logInFailedAlert').classList.add('hidden');
+            document.getElementById('noAccessAlert').classList.remove('hidden');
           }
-
-
-
 
         });
 
@@ -52,6 +52,59 @@ document.addEventListener("DOMContentLoaded",function(){
       return false;
 
   }
+
+
+// Intercept form post from createAccount-form, and instead make the post with JS fetch.
+  var formElementCreateAccount = document.getElementById("CreateAccountForm");
+  if(formElementCreateAccount) formElementCreateAccount.onsubmit = submitFormCreateAccount;
+
+  function submitFormCreateAccount(){
+
+    var formData = new FormData(formElementCreateAccount);
+
+    var postOptions = {
+      method: 'post',
+      body: formData,
+      credentials: 'include'
+    };
+
+    fetch(formElementCreateAccount.action, postOptions)
+      .then(response => {
+
+        var status = response.status;
+
+        if(status === 400){
+          document.getElementById('EmailAvailabilityError').classList.add('hidden');
+          document.getElementById('passwordConformationError').classList.remove('hidden');
+
+        }
+
+        else if(status === 201){
+
+          document.location.href = 'login.html';
+
+        }
+
+        else if (status === 403){
+          document.getElementById('passwordConformationError').classList.add('hidden');
+          document.getElementById('EmailAvailabilityError').classList.remove('hidden');
+        }
+
+        else{
+
+        }
+
+      });
+
+    return false;
+  }
+
+
+
+
+
+
+
 
 
 });

@@ -16,6 +16,8 @@
   <!-- Place favicon.ico in the root directory -->
   <meta name="theme-color" content="#fafafa">
 
+  <!-- JSsheet -->
+  <script src="js/app.js" ></script>
 
   <!-- stylesheet -->
   <link rel="stylesheet" href="css/login&CreateAccount.css">
@@ -42,18 +44,18 @@
 
             <span class="msg-info loginText row justify-content-center px-3 mb-3">Opret Konto</span>
 
-            <form action="/createAccount" method="POST">
+            <form action="http://localhost:8080/createAccount" method="POST" id="CreateAccountForm">
 
-<!--  class="invalidChoice" th:if="${param.alreadyExists}">
-    <p><strong>Beklager!</strong> Det valgte brugernavn er ikke ledigt.</p>
-  </div>
+              <div class="alert alert-danger hidden" id = "EmailAvailabilityError">
+                <p><strong>Beklager!</strong> Det valgte brugernavn er ikke ledigt.</p>
+              </div>
 
-  <div class="invalidChoice" th:if="${param.matchFailed}">
-    <p><strong>UPS!</strong> Bekræftelse af password fejlede. Prøv igen.</p>
-  </div>-->
+              <div class="alert alert-danger hidden" id="passwordConformationError">
+                <p><strong>UPS!</strong> Bekræftelse af password fejlede. Prøv igen.</p>
+              </div>
 
               <div class="form-group">
-                <input type="text" name="username" placeholder="Brugernavn" class="form-control formFont formControlCustom">
+                <input type="text" name="email" placeholder="Email" class="form-control formFont formControlCustom">
               </div>
 
               <div class="form-group">
