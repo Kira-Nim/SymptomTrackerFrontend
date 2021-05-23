@@ -1,5 +1,5 @@
 {
-  "name": " ",
+  "name": "SymptomTrackerFrontend",
   "version": "0.0.1",
   "description": "",
   "keywords": "",
@@ -13,5 +13,9 @@
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "chart.js": "^3.2.1",
+    "fullcalendar": "^5.7.0"
   }
 }
