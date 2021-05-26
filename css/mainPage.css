@@ -1,0 +1,78 @@
+
+
+
+/* ****************************   Temp classes for process   ********************************/
+/* ****************************   ------------------------   ********************************/
+
+.tempBorderRed{
+  border: 2px solid #aa1018;
+}
+
+.tempBorderBlue{
+  border: 2px solid blue;
+}
+
+.tempBorderGreen{
+  border: 2px solid green;
+}
+
+.tempBorderPink{
+  border: 2px solid #af6493;
+}
+
+.tempBorderPurple{
+  border: 2px solid #641d80;
+}
+
+.tempBorderOrange{
+  border: 2px solid #ff8c19;
+}
+.tempBorderLBlue{
+  border: 2px solid #66bde6;
+}
+
+/* ****************************       Symptom Component      ********************************/
+/* ****************************   ------------------------   ********************************/
+
+.overlay{
+  background-color: #fcfcfc;
+  opacity:0.2;
+  z-index:100;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.removed{
+  display: none;
+}
+
+.componentPosition{
+  position: relative;
+  z-index:90;
+}
+
+.intensitySquare{
+  width:14.28%;
+  height:100%;
+  background-color: #e4aaa2;
+  border: 2px solid #bf8e88;
+}
+
+.intencitySquareRow{
+  height:100%;
+}
+
+.intensitySquare:hover{
+  background-color: #fcdcc1;
+}
+
+.hidden{
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid #f1f1f1;
+  border-collapse: collapse;
+}
+
+
+
+
