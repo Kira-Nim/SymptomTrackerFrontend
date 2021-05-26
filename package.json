@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "chart.js": "^3.2.1",
-    "fullcalendar": "^5.7.0"
+    "fullcalendar": "^5.7.0",
+    "moment": "^2.29.1"
   }
 }

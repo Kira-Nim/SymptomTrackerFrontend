@@ -17,13 +17,13 @@ document.addEventListener("DOMContentLoaded",function(){
     // FormData is an Object used primarily to structure the form body from an element so that it can be used in a post-request.
       var formData = new FormData(formElement);
 
-      var postOptions = {
+      var fetchOptions = {
         method: 'post',
         body: formData,
         credentials: 'include' //We shall include cookies in any requests and if there are a cookie in a responses, it should be set in the browser.
       };
 
-      fetch(formElement.action, postOptions)
+      fetch(formElement.action, fetchOptions)
         .then(response => {
 
           var status = response.status
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
     return false;
   }
-  
+
 
 });
 
