@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3283bc2-99fc-44c1-b723-62148396ee3a" name="Default Changelist" comment="" />
+    <list default="true" id="b3283bc2-99fc-44c1-b723-62148396ee3a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/mainPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mainPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainPage.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,22 +116,22 @@
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state x="532" y="426" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1621083638155" />
-    <state width="1676" height="199" key="GridCell.Tab.0.bottom" timestamp="1622071841191">
+    <state width="1676" height="208" key="GridCell.Tab.0.bottom" timestamp="1622151471007">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
-    <state width="1676" height="199" key="GridCell.Tab.0.bottom/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1622071841191" />
-    <state width="1676" height="199" key="GridCell.Tab.0.center" timestamp="1622071841190">
+    <state width="1676" height="208" key="GridCell.Tab.0.bottom/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1622151471007" />
+    <state width="1676" height="208" key="GridCell.Tab.0.center" timestamp="1622151471006">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
-    <state width="1676" height="199" key="GridCell.Tab.0.center/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1622071841190" />
-    <state width="1676" height="199" key="GridCell.Tab.0.left" timestamp="1622071841189">
+    <state width="1676" height="208" key="GridCell.Tab.0.center/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1622151471006" />
+    <state width="1676" height="208" key="GridCell.Tab.0.left" timestamp="1622151471004">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
-    <state width="1676" height="199" key="GridCell.Tab.0.left/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1622071841189" />
-    <state width="1676" height="199" key="GridCell.Tab.0.right" timestamp="1622071841191">
+    <state width="1676" height="208" key="GridCell.Tab.0.left/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1622151471004" />
+    <state width="1676" height="208" key="GridCell.Tab.0.right" timestamp="1622151471006">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
-    <state width="1676" height="199" key="GridCell.Tab.0.right/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1622071841191" />
+    <state width="1676" height="208" key="GridCell.Tab.0.right/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1622151471006" />
     <state x="915" y="211" key="SettingsEditor" timestamp="1621694328723">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
@@ -143,5 +148,17 @@
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state x="438" y="339" width="838" height="1032" key="search.everywhere.popup/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1621014356319" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/loginCreateAccount.js</url>
+          <line>26</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
