@@ -90,8 +90,37 @@ function insertRegistrations(){
           sendRegistrationPostRequest(symptomId, j+1, k)
         });
 
-
         divIntensitySquareRow.appendChild(divIntensitySquare);
+
+        divIntensitySquare.addEventListener("mouseover", () =>{
+
+          let found = false;
+
+          for(child of divIntensitySquareRow.children){
+
+            if(found){
+              child.classList.add('mouseOverHidden');
+            }
+
+            else {
+              child.classList.add('mouseOverEffect');
+            }
+
+            if(child.isSameNode(divIntensitySquare)){
+              found = true;
+            }
+          }
+        });
+
+        divIntensitySquare.addEventListener("mouseout", () =>{
+          for(child of divIntensitySquareRow.children){
+            child.classList.remove('mouseOverEffect');
+            child.classList.remove('mouseOverHidden');
+          }
+        });
+
+
+
 
       }
     }

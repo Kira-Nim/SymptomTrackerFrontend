@@ -55,8 +55,8 @@
 .intensitySquare{
   width:14.28%;
   height:100%;
-  background-color: #e4aaa2;
-  border: 2px solid #bf8e88;
+  background-color: #edb1a8;
+  border: 2px solid #dea59e;
 }
 
 .intensitySquareRow{
@@ -73,6 +73,15 @@
   border-collapse: collapse;
 }
 
+.mouseOverEffect{
+  background-color: rgb(253, 224, 255);
+  border: 1px solid rgb(253, 224, 255);
+  border-collapse: collapse;
+}
 
-
+.mouseOverHidden{
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid #f1f1f1;
+  border-collapse: collapse;
+}
 
