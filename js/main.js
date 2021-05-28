@@ -75,10 +75,14 @@ function insertRegistrations(){
 
         let divIntensitySquare = document.createElement('div');
         divIntensitySquare.className = 'intensitySquare intensitySquareMain';
-        
+
 
         if (k > symptomVTO.intensityArray[j]) {
           divIntensitySquare.classList.add('hidden');
+        }
+
+        if(k === 1){
+          divIntensitySquare.classList.add('intensitySquareMain2');
         }
 
         // Add eventListener to every divIntensitySquare element.
