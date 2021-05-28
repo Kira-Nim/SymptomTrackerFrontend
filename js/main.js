@@ -75,7 +75,7 @@ function insertRegistrations(){
       for (let k = 1; k <= 7; k++) {
 
         let divIntensitySquare = document.createElement('div');
-        divIntensitySquare.className = 'intensitySquare';
+        divIntensitySquare.className = 'intensitySquare intensitySquareMain';
 
         if (k > symptomVTO.intensityArray[j]) {
           divIntensitySquare.classList.add('hidden');
@@ -87,29 +87,22 @@ function insertRegistrations(){
         let symptomId = symptomVTO.symptom.id;
 
         divIntensitySquare.addEventListener("click",() => {
-          sendRegistrationPostRequest(symptomId, j+1, k)
+          sendRegistrationPostRequest(symptomId, j+1, k);
+
+          for(child of divIntensitySquareRow.children){
+            child.classList.remove('hidden');
+            child.classList.remove('intensitySquare');
+            child.classList.remove('mouseOverEffect');
+            child.classList.remove('mouseOverHidden');
+          }
+          divIntensitySquareBackground('intensitySquare', 'hidden', divIntensitySquareRow, divIntensitySquare)
+
         });
 
         divIntensitySquareRow.appendChild(divIntensitySquare);
 
         divIntensitySquare.addEventListener("mouseover", () =>{
-
-          let found = false;
-
-          for(child of divIntensitySquareRow.children){
-
-            if(found){
-              child.classList.add('mouseOverHidden');
-            }
-
-            else {
-              child.classList.add('mouseOverEffect');
-            }
-
-            if(child.isSameNode(divIntensitySquare)){
-              found = true;
-            }
-          }
+          divIntensitySquareBackground('mouseOverEffect', 'mouseOverHidden', divIntensitySquareRow, divIntensitySquare);
         });
 
         divIntensitySquare.addEventListener("mouseout", () =>{
@@ -119,10 +112,27 @@ function insertRegistrations(){
           }
         });
 
-
-
-
       }
+    }
+  }
+}
+
+function divIntensitySquareBackground(classParam1, classParam2, parentElementParam, childParam){
+
+  let found = false;
+
+  for(child of parentElementParam.children){
+
+    if(found){
+      child.classList.add(classParam2);
+    }
+
+    else {
+      child.classList.add(classParam1);
+    }
+
+    if(child.isSameNode(childParam)){
+      found = true;
     }
   }
 }

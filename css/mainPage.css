@@ -52,19 +52,19 @@
   z-index:90;
 }
 
-.intensitySquare{
+.intensitySquareMain{
   width:14.28%;
   height:100%;
-  background-color: #edb1a8;
-  border: 2px solid #dea59e;
+  border: 1px solid #f1f1f1;
+}
+
+.intensitySquare{
+  background-color: rgb(212, 143, 85);
+  border: 1px solid rgb(218, 147, 87);
 }
 
 .intensitySquareRow{
   height:100%;
-}
-
-.intensitySquare:hover{
-  background-color: #fcdcc1;
 }
 
 .hidden{
@@ -74,8 +74,8 @@
 }
 
 .mouseOverEffect{
-  background-color: rgb(253, 224, 255);
-  border: 1px solid rgb(253, 224, 255);
+  background-color: rgba(252, 169, 101, 0.71);
+  border: 1px solid rgba(255, 172, 101, 0.5);
   border-collapse: collapse;
 }
 
@@ -84,4 +84,6 @@
   border: 1px solid #f1f1f1;
   border-collapse: collapse;
 }
+
+
 
