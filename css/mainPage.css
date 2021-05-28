@@ -54,22 +54,22 @@
 
 .intensitySquareMain{
   width:14.28%;
-  height:100%;
-  border: 1px solid #f1f1f1;
+  height:28px;
 
-  border-top: 1px solid #d8d8d8!important;
-  border-bottom: 1px solid #d8d8d8!important;
-  border-right: 1px solid #d8d8d8!important;
 }
 
 .intensitySquareMain2{
-  border-left: 1px solid #d8d8d8!important;
+  border-left: 2px solid #d2d2d2 !important;
 }
 
+.intensitySquareMain3{
+  border-right: 2px solid #d2d2d2 !important;
+}
 
 .intensitySquare{
-  background-color: rgb(212, 143, 85);
-  border: 1px solid rgb(218, 147, 87);
+  background-color: rgba(248, 160, 80, 1);
+  border-top: 2px solid #d2d2d2;
+  border-bottom: 2px solid #d2d2d2;
 }
 
 .intensitySquareRow{
@@ -77,26 +77,29 @@
 }
 
 .hidden{
-  background-color: rgba(255, 255, 255, 1);
-  border: 1px solid #f1f1f1;
-  border-collapse: collapse;
+  background-color: rgb(255, 255, 255);
+  border-top: 2px solid #d2d2d2;
+  border-bottom: 2px solid #d2d2d2;
+  border-right: 1px solid #e0e0e0;
 }
 
 .mouseOverEffect{
-  background-color: rgba(252, 169, 101, 0.71);
-  border: 1px solid rgba(255, 172, 101, 0.5);
-  border-collapse: collapse;
+  background-color: rgba(255, 165, 82, 1);
+  border-right: 1px solid rgba(255, 165, 82, 1);
+  border-left: 1px solid rgba(255, 165, 82, 1);
+  border-top: 2px solid #d2d2d2;
+  border-bottom: 2px solid #d2d2d2;
 }
 
 .mouseOverHidden{
-  background-color: rgba(255, 255, 255, 1);
-  border: 1px solid #f1f1f1;
-  border-collapse: collapse;
+  background-color: rgb(255, 255, 255);
+  border-top: 2px solid #d2d2d2;
+  border-bottom: 2px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
 }
 
 .rowBorder{
   border: 1px solid #4e4e4e;
-  border-collapse: collapse;
 
 }
 
@@ -104,28 +107,36 @@
   border-radius: 40px;
   margin-top:100px!important;
   margin-bottom:100px!important;
+  padding-bottom:70px!important;
   box-shadow: 0px 1px 21px -8px rgba(21,20,20,0.25);
+  background-color: rgb(255, 255, 255);
 
 }
 
 
 .rowSettings{
   margin:10px!important;
+  margin-bottom:15px!important;
+  margin-top:15px!important;
+  align-items: center;
 }
 
 .colSettings{
   padding-right:10px!important;
   padding-left:0px!important;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 400;
-
+  font-family: 'Assistant', sans-serif;
+  color:#3a3a3a;
 }
 
 .colSettings2{
   padding-right:10px!important;
   padding-left:0px!important;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
+  font-family: 'Assistant', sans-serif;
+  color: #3a3a3a;
 
 }
 
@@ -133,8 +144,10 @@
   padding-right:10px!important;
   padding-left:0px!important;
   padding:15px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
+  font-family: 'Assistant', sans-serif;
+  color: #3a3a3a;
 
 }
 
@@ -149,7 +162,9 @@
 
 .componentHeader{
   text-align:center;
-  font-size:30px;
+  font-size:35px;
   padding-top: 50px;
   padding-bottom: 20px;
+  font-family: 'Assistant', sans-serif;
+  color: #3a3a3a;
 }

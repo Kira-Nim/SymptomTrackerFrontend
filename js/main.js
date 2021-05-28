@@ -85,6 +85,10 @@ function insertRegistrations(){
           divIntensitySquare.classList.add('intensitySquareMain2');
         }
 
+        if(k === 7){
+          divIntensitySquare.classList.add('intensitySquareMain3');
+        }
+
         // Add eventListener to every divIntensitySquare element.
         // Method for click calls function sendRegistrationPostRequest which takes symptomId, regNum, intensity as parameters.
         // NB closure is used to make sure the parameter values for sendRegistrationPostRequest does not change while waiting for event.
