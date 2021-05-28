@@ -48,15 +48,14 @@ function insertRegistrations(){
     let container = document.getElementById('symptomRegistrationContainer');
 
     let divRow = document.createElement("div");
-    divRow.className = 'row tempBorderBlue';
+    divRow.className = 'row rowSettings';
     container.appendChild(divRow);
 
     let divCol1 = document.createElement("div");
-    divCol1.className = 'col-3 tempBorderOrange';
+    divCol1.className = 'col-3 colSettings';
     divRow.appendChild(divCol1);
 
     let divSymptomName = document.createElement('div');
-    divSymptomName.className = 'tempBorderPink';
 
     let symptomName = document.createTextNode(symptomVTO.symptom.name);
     divSymptomName.appendChild(symptomName);
@@ -65,17 +64,18 @@ function insertRegistrations(){
     for(let j = 0; j < symptomVTO.intensityArray.length; j++) {
 
       let divCol = document.createElement("div");
-      divCol.className = 'col-3 tempBorderOrange';
+      divCol.className = 'col-3';
       divRow.appendChild(divCol);
 
       let divIntensitySquareRow = document.createElement('div');
-      divIntensitySquareRow.className = 'row intensitySquareRow tempBorderLBlue';
+      divIntensitySquareRow.className = 'row intensitySquareRow colSettings2';
       divCol.appendChild(divIntensitySquareRow);
 
       for (let k = 1; k <= 7; k++) {
 
         let divIntensitySquare = document.createElement('div');
         divIntensitySquare.className = 'intensitySquare intensitySquareMain';
+        
 
         if (k > symptomVTO.intensityArray[j]) {
           divIntensitySquare.classList.add('hidden');
