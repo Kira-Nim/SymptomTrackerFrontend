@@ -6,7 +6,7 @@
   "license": "",
   "author": "",
   "scripts": {
-    "build": "parcel build login.html mainPage.html",
+    "build": "parcel build login.html mainPage.html symptomVisualization.html",
     "dev": "parcel login.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,7 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
-    "chart.js": "^3.2.1",
+    "chart.js": "^3.3.2",
     "fullcalendar": "^5.7.0",
     "moment": "^2.29.1"
   }
