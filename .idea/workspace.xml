@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3283bc2-99fc-44c1-b723-62148396ee3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/symptomVisualization.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/symptomVisualization.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/symptomVisualization.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/vendor/symptomVisualization.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symptomVisualization.html" beforeDir="false" afterPath="$PROJECT_DIR$/symptomVisualization.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
