@@ -100,7 +100,7 @@ function insertDataIntoChartComponent(chartDataArray){
   }
 
   // Chart is a JS class (not a dom-element) imported with chart.js library.
-  let chart = new Chart(canvas, {
+  window.chart = new Chart(canvas, {
 
     // This is a type of chart from chart.js makes available. chart.js offers a catalogue of different charts to implement, each is a type of chart.
     type: 'line',
@@ -180,7 +180,7 @@ function populateVisibilityControlPanel(){
     liElement.appendChild(labelElement);
 
     let inputElement = document.createElement('input');
-    inputElement.checked = true;
+    inputElement.checked = symptomVisualizationVTO.symptom.visibilityOnStatistics;
     inputElement.type = 'checkbox';
     labelElement.appendChild(inputElement);
 
@@ -192,16 +192,41 @@ function populateVisibilityControlPanel(){
     let symptomName = document.createTextNode(symptomVisualizationVTO.symptom.name);
     spanElement.appendChild(symptomName);
 
-    
+
+    liElement.addEventListener("click",() => {
+      reactOnControlInput(symptomVisualizationVTO.chartDataSet, inputElement.checked);
+
+    });
+  }
+}
+
+
+
+function reactOnControlInput(dataset, checked){
+
+  if(checked){
+    window.chart.data.datasets.push(dataset);
   }
 
+  else{
 
+    let removalIndex = window.chart.data.datasets.indexOf(dataset);
 
+    if(removalIndex >= 0){
+      window.chart.data.datasets.splice(removalIndex, 1);
+    }
 
+  }
 
-
-
+  window.chart.update();
 }
+
+
+
+
+
+
+
 
 
 
