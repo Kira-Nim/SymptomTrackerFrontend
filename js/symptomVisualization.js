@@ -44,10 +44,6 @@ function getDataForChartComponent(){
       // Make chartDataSet for each symptomVisualizationVTO for the option-obj which is a parameter for Chart.
       for(let symptomVisualizationVTO of symptomVisualizationVTOArray){
 
-        if(symptomVisualizationVTO.symptom.VisibleOnStatistics === true){}
-
-
-
         let registrations = symptomVisualizationVTO.symptomRegistrationVTOArray;
         let coordinatesArray = registrations.map(e => {return{x: e.dateTime, y: e.intensity}});
 
@@ -55,14 +51,28 @@ function getDataForChartComponent(){
           label: symptomVisualizationVTO.symptom.name,
           backgroundColor: symptomVisualizationVTO.symptom.color,
           borderColor: symptomVisualizationVTO.symptom.color,
-          borderWidth: 2,
-          data: coordinatesArray
+          borderWidth: 3,
+          data: coordinatesArray,
+          tension: 0.0,
+          // cubicInterpolationMode: 'monotone',
+          borderJoinStyle: 'round',
+          pointRadius: 3
+
+/*          pointBorderColor: symptomVisualizationVTO.symptom.color + '80',
+          pointBackgroundColor: symptomVisualizationVTO.symptom.color + '80'*/
+
         };
 
         // Make new attribute on symptomVisualizationVTO called chartDataSet, containing data for graph visialization
         symptomVisualizationVTO.chartDataSet = chartDataSet;
-        chartDataArray.push(chartDataSet);
+
+        // If the graph should be visible on chart by default (saved settings) add chart data to chart data set
+        if(symptomVisualizationVTO.symptom.visibilityOnStatistics){
+          chartDataArray.push(chartDataSet);
+        }
+
       }
+      populateVisibilityControlPanel();
 
       insertDataIntoChartComponent(chartDataArray);
     });
@@ -115,17 +125,23 @@ function insertDataIntoChartComponent(chartDataArray){
             unit: 'day' // One gridline per day
           },
           ticks: {
-            source: 'labels' // Put ticks specifically on the labels, so we get a label in the middle of each day
+            source: 'labels', // Put ticks specifically on the labels, so we get a label in the middle of each day
+            font: {
+              size: 17,
+              weight: 'bold'
+            }
           },
           grid: {
-            offset: true // Put vertical grid lines directly between date names, not directly above them
+            offset: true, // Put vertical grid lines directly between date names, not directly above them
+            borderWidth: 3,
+            lineWidth: 2
           },
           min: fromDate.toISOString(), // Midnight, right at the very beginning of the week
-          max: toDate.toISOString(), // Midnight, right at the very end of the week (exactly 7 days later)
+          max: fromDate.clone().add(7, 'days').toISOString(), // Midnight, right at the very end of the week (exactly 7 days later)
         },
         y: {
           min: 0, // Intensity
-          max: 7, // Intensity
+          max: 7.5, // Intensity
           display: false
           // If we need multiple y scales (one for symptoms (intensity 0-7) and one for activity (24 hours))
           // then there's a guide here: https://stackoverflow.com/a/38094165/126183 (with y instead of yAxes)
@@ -146,12 +162,46 @@ function insertDataIntoChartComponent(chartDataArray){
 
   });
 
-  console.log('line 161');
 }
 
 
 
+function populateVisibilityControlPanel(){
 
+  let  ulElement = document.getElementById('symptomList');
+
+  for(let symptomVisualizationVTO of symptomVisualizationVTOArray){
+
+    let liElement = document.createElement('li');
+    liElement.className = 'symptomListElements';
+    ulElement.appendChild(liElement);
+
+    let labelElement = document.createElement('label');
+    liElement.appendChild(labelElement);
+
+    let inputElement = document.createElement('input');
+    inputElement.checked = true;
+    inputElement.type = 'checkbox';
+    labelElement.appendChild(inputElement);
+
+    let spanElement = document.createElement('span');
+    spanElement.className =  'ulSymptomName';
+    labelElement.appendChild(spanElement);
+
+    console.log(symptomVisualizationVTO.symptom.name);
+    let symptomName = document.createTextNode(symptomVisualizationVTO.symptom.name);
+    spanElement.appendChild(symptomName);
+
+    
+  }
+
+
+
+
+
+
+
+}
 
 
 
