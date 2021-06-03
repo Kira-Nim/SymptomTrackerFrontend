@@ -54,9 +54,9 @@ function getDataForChartComponent(){
           borderWidth: 3,
           data: coordinatesArray,
           tension: 0.0,
-          // cubicInterpolationMode: 'monotone',
+          cubicInterpolationMode: 'monotone',
           borderJoinStyle: 'round',
-          pointRadius: 3
+          pointRadius: 2
 
 /*          pointBorderColor: symptomVisualizationVTO.symptom.color + '80',
           pointBackgroundColor: symptomVisualizationVTO.symptom.color + '80'*/
