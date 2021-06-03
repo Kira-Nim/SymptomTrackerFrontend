@@ -31,20 +31,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
   <!-- for bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
 
-  <div class="container containerBox tempBorderOrange">
-    <div class="row">
 
-      <div class="col-9 tempBorderGreen">
-        <canvas id="chart"></canvas>
+
+  <div class="navBackground">
+    <div class="navCard">
+
+      <div class="navDropdown navLinkStyle navImgPlacement">
+        <img src="img/BrainTempLogoWhite.jpg" class="navImg"/>
+        <div class="navDropdown-content">
+          <a href="/logout" class="navLinkStyle">Log ud</a>
+        </div>
       </div>
 
-      <div class="col-3 tempBorderRed">
+      <div class="navLinkStyle navImgPlacement2" id = "navHomePage">
+        <div href="mainPage.html" class="navLinkStyle">
+          <img src="img/grandson.png" class="navImg"/>
+        </div>
+      </div>
+
+      <div class="navLinkStyle navImgPlacement3" id = "navVisualization">
+        <div class="navLinkStyle">
+          <img src="img/line-chart.png" class="navImg"/>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container containerBox">
+    <div class="row">
+
+      <div class="col-9 chartPosition">
+        <canvas id="chart" class="chartBox" height="200px" width="400"></canvas>
+      </div>
+
+      <div class="col-3 controlBoxPosition">
           <div class=" controlBox">
             <ul id="symptomList" class="symptomList ulElement">
 

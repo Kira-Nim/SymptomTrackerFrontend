@@ -38,6 +38,7 @@ function getSymptomList(){
       insertRegistrations();
     })
 
+  navigate()
 }
 
 
@@ -162,3 +163,15 @@ function sendRegistrationPostRequest(symptomId, regNum, intensity){
     })
 }
 
+
+function navigate(){
+  document.getElementById('navHomePage').addEventListener("click",() => {
+    document.location.href = 'mainPage.html';
+  });
+
+  document.getElementById('navVisualization').addEventListener("click",() => {
+    document.location.href = 'symptomVisualization.html';
+  });
+
+
+}

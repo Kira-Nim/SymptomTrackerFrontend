@@ -75,6 +75,8 @@ function getDataForChartComponent(){
       populateVisibilityControlPanel();
 
       insertDataIntoChartComponent(chartDataArray);
+
+      navigate()
     });
 }
 
@@ -182,6 +184,7 @@ function populateVisibilityControlPanel(){
     let inputElement = document.createElement('input');
     inputElement.checked = symptomVisualizationVTO.symptom.visibilityOnStatistics;
     inputElement.type = 'checkbox';
+    inputElement.className = 'checkBoxStyle';
     labelElement.appendChild(inputElement);
 
     let spanElement = document.createElement('span');
@@ -242,7 +245,17 @@ function postfromVisualizationControlInput(symptomVisualizationVTO, checked){
 }
 
 
+function navigate(){
+  document.getElementById('navHomePage').addEventListener("click",() => {
+    document.location.href = 'mainPage.html';
+  });
 
+  document.getElementById('navVisualization').addEventListener("click",() => {
+    document.location.href = 'symptomVisualization.html';
+  });
+
+
+}
 
 
 
