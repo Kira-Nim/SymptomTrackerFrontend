@@ -195,7 +195,7 @@ function populateVisibilityControlPanel(){
 
     liElement.addEventListener("click",() => {
       reactOnControlInput(symptomVisualizationVTO.chartDataSet, inputElement.checked);
-
+      postfromVisualizationControlInput(symptomVisualizationVTO, inputElement.checked);
     });
   }
 }
@@ -223,7 +223,23 @@ function reactOnControlInput(dataset, checked){
 
 
 
+function postfromVisualizationControlInput(symptomVisualizationVTO, checked){
 
+  symptomVisualizationVTO.symptom.visibilityOnStatistics = checked;
+
+
+
+  let fetchOptions = {
+    method: 'post',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(symptomVisualizationVTO.symptom),
+    credentials: 'include'
+  };
+
+  fetch('http://localhost:8080/symptomVisualizationControl', fetchOptions)
+    .then(response => {})
+
+}
 
 
 

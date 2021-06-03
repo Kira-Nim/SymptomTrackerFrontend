@@ -159,9 +159,6 @@ function sendRegistrationPostRequest(symptomId, regNum, intensity){
 
   fetch('http://localhost:8080/symptomRegistration', fetchOptions)
     .then(response => {
-      console.log('responseRecieved');
     })
-
-
 }
 
