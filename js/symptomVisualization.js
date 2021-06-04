@@ -8,10 +8,18 @@ import 'chartjs-adapter-moment';
 
 document.addEventListener("DOMContentLoaded",function(){
 
-  const today = moment();
-  window.fromDate = today.clone().startOf('isoWeek');
-  window.toDate = today.clone().endOf('isoWeek');
 
+  const today = moment();
+  window.fromDate = today.clone().startOf('day').subtract(6, 'days');
+  window.toDate = today.clone().endOf('day');
+
+
+/*  // For aligning with calender week. Might be a good feature later.
+  if(alignCalenderWeek){
+    window.fromDate = today.clone().startOf('isoWeek');
+    window.toDate = today.clone().endOf('isoWeek');
+  }
+*/
 
   getDataForChartComponent();
 
