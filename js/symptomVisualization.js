@@ -244,6 +244,11 @@ function postfromVisualizationControlInput(symptomVisualizationVTO, checked){
     method: 'post',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(symptomVisualizationVTO.symptom),
+
+    // Credentials references the cookie.
+    // Technically this is part of the header, but it is outside the header braces because it is handles by the browser.
+    // why this is allowed by SOP, i am not totally sure. Initially i thought it was because the browser handled it and I didn't have aces. That this made it secure like a html post.
+    // But that turned out to be false. So it might be because Spring handles setting the cookies and therefor also the allowing of this to be included in the header.
     credentials: 'include'
   };
 

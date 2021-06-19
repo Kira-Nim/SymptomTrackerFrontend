@@ -4,6 +4,7 @@
     <list default="true" id="b3283bc2-99fc-44c1-b723-62148396ee3a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/symptomVisualization.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/symptomVisualization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +97,10 @@
       <workItem from="1619960801709" duration="28381000" />
       <workItem from="1621155559756" duration="15842000" />
       <workItem from="1621347349468" duration="15864000" />
+      <workItem from="1622799524458" duration="1900000" />
+      <workItem from="1623327451521" duration="18046000" />
+      <workItem from="1623369325090" duration="4713000" />
+      <workItem from="1623943354459" duration="3104000" />
     </task>
     <servers />
   </component>
@@ -115,22 +120,22 @@
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state x="532" y="426" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1621083638155" />
-    <state width="1738" height="101" key="GridCell.Tab.0.bottom" timestamp="1622796834650">
+    <state width="626" height="101" key="GridCell.Tab.0.bottom" timestamp="1623311577203">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
-    <state width="1738" height="101" key="GridCell.Tab.0.bottom/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1622796834650" />
-    <state width="1738" height="101" key="GridCell.Tab.0.center" timestamp="1622796834649">
+    <state width="626" height="101" key="GridCell.Tab.0.bottom/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1623311577203" />
+    <state width="626" height="101" key="GridCell.Tab.0.center" timestamp="1623311577202">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
-    <state width="1738" height="101" key="GridCell.Tab.0.center/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1622796834649" />
-    <state width="1738" height="101" key="GridCell.Tab.0.left" timestamp="1622796834648">
+    <state width="626" height="101" key="GridCell.Tab.0.center/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1623311577202" />
+    <state width="626" height="101" key="GridCell.Tab.0.left" timestamp="1623311577202">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
-    <state width="1738" height="101" key="GridCell.Tab.0.left/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1622796834648" />
-    <state width="1738" height="101" key="GridCell.Tab.0.right" timestamp="1622796834650">
+    <state width="626" height="101" key="GridCell.Tab.0.left/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1623311577202" />
+    <state width="626" height="101" key="GridCell.Tab.0.right" timestamp="1623311577203">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
-    <state width="1738" height="101" key="GridCell.Tab.0.right/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1622796834650" />
+    <state width="626" height="101" key="GridCell.Tab.0.right/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1623311577203" />
     <state x="915" y="211" key="SettingsEditor" timestamp="1621694328723">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
@@ -139,6 +144,10 @@
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state x="927" y="525" key="com.intellij.ide.util.TipDialog/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1621347405120" />
+    <state x="2238" y="364" width="781" height="574" key="find.popup" timestamp="1623374099485">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="2238" y="364" width="781" height="574" key="find.popup/3440.563.1440.877/0.23.3440.1417@0.23.3440.1417" timestamp="1623374099485" />
     <state x="376" y="235" width="1539" height="687" key="new project wizard" timestamp="1620142273693">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
